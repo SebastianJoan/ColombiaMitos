@@ -1,4 +1,7 @@
-import 'package:colombiamito/src/MainPage.dart';
+import 'package:colombiamito/src/views/MainPage.dart';
+import 'package:colombiamito/src/views/explore.dart';
+import 'package:colombiamito/src/views/juegosMenu.dart';
+import 'package:colombiamito/src/views/mitosmenu.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -14,9 +17,9 @@ class MyApp extends StatelessWidget {
         initialRoute: 'MainPage',
         routes: {
           'MainPage': (BuildContext context) => const MainPage(),
-          // 'menu': (BuildContext context) => const Menu(),
-          // 'Pinimenu': (BuildContext context) => const PiniMenu(),
-          // 'Papaslocasmenu': (BuildContext context) => const MixMenu(),
+          'MitoMenu': (BuildContext context) => const MitosMenu(),
+          'juegosMenu': (BuildContext context) => const JuegosMenu(),
+          'explore': (BuildContext context) => const Explore(),
           // 'Esparramenu': (BuildContext context) => const EsparraMenu(),
           // 'Docmenu': (BuildContext context) => const DocMenu(),
           // 'Confir': (BuildContext context) => const Confir(),
